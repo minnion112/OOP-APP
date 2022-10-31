@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="37dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/arrow_left" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="119dp"
+            app:srcCompat="@drawable/ic_add_alert_24" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="64dp"
+            app:srcCompat="@drawable/pin_note" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_save_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="451dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:ems="10"
+                android:hint="Add note"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

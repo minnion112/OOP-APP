@@ -2,15 +2,116 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:id="@+id/reminder_view"
-    android:layout_height="match_parent"
-    tools:context=".components.ReminderViews">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="@string/colour_picker_header">
 
-    <EditText
+    <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <LinearLayout
+            android:layout_width="246dp"
+            android:layout_height="39dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/imageFilterView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="?android:attr/actionModeWebSearchDrawable" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="93dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginBottom="-3dp"
+            android:drawableTint="@color/black"
+            android:text="   LỜI NHẮC" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/ic_menu_24" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="39dp"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-72dp"
+        android:src="@drawable/chu_ng" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:text="okok"
-        android:textSize="100dp" />
+        android:layout_marginBottom="337dp"
+        android:text="Ghi chú và lời nhắc sắp tới sẽ xuất hiện tại đây" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="65dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="56dp"
+            android:src="@drawable/add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-4dp">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/text" />
+
+    </androidx.cardview.widget.CardView>
+
 </RelativeLayout>

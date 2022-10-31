@@ -25,33 +25,33 @@
                 android:src="@drawable/left"
                 android:padding="12dp"
                 />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_alignParentEnd="true"
-                >
+                android:orientation="horizontal">
+
                 <ImageButton
                     android:id="@+id/imageView_pin"
                     android:layout_width="?attr/actionBarSize"
                     android:layout_height="?attr/actionBarSize"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/pin_note"
-                    />
+                    android:src="@drawable/pin_note" />
+
                 <ImageButton
                     android:id="@+id/imageView_timer"
                     android:layout_width="?attr/actionBarSize"
                     android:layout_height="?attr/actionBarSize"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/ic__timer_24"
-                    />
+                    android:src="@drawable/ic__timer_24" />
+
                 <ImageButton
                     android:id="@+id/imageView_save"
                     android:layout_width="?attr/actionBarSize"
                     android:layout_height="?attr/actionBarSize"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/check_24"
-                    />
+                    android:src="@drawable/check_24" />
             </LinearLayout>
         </RelativeLayout>
     </Toolbar>
